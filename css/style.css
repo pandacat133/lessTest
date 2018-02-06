@@ -1,0 +1,85 @@
+body,html, h1, h2, h3, p, ol, ul, li, a{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    font: inherit;
+}
+
+body{
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Asul', sans-serif;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 30px;
+    font-family: 'Asul', sans-serif;
+    font-weight: lighter;
+}
+
+.content, .title{
+    font-family: 'Asul', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.container{
+    display: flex;
+    background-color: #ffffff;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    background: url("../images/businessWoman.png") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.info{
+    background-color: #696969;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0 10px 0;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+}
+
+.right img{
+    width: 90%;
+}
+
+.date{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 12px;
+    color: #696969;
+}
+
+.experience div{
+    margin: 0 0 8px 10px;
+}
+
+.link a{
+    display: block;
+}
