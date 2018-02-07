@@ -1,0 +1,125 @@
+//VARIABLES
+
+@bodyFont: Arial, Helvetica, sans-serif;
+@titleFont: 'Asul', sans-serif;
+@white: #FFFFFF;
+@grey: #696969;
+@black: #2A2A2A;
+@buttonColor: #7FACAA;
+@smallFont: 12px;
+
+//MIXINS
+
+.button(@buttonRadius){
+  width: 15%;
+  border-radius: @buttonRadius;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  color: @white;
+  background-color: @buttonColor;
+  font-size: @smallFont;
+
+  &:hover{
+    color: @black;
+  }
+}
+
+//NORMAL CSS
+
+body,html, h1, h2, h3, p, ol, ul, li, a{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font: inherit;
+}
+
+body{
+  background-color: @black;
+  display: flex;
+  align-items: center;
+  font-family: @bodyFont;
+}
+
+.container{
+  display: flex;
+  background-color: @white;
+  width: 70%;
+  height: 700px;
+  margin: 0 auto;
+
+  .left{
+    width: 50%;
+    height: 100%;
+    background: url("../images/businessWoman.png") no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .info{
+      background-color: @grey;
+      position: absolute;
+      color: @white;
+      text-align: center;
+      width: 100%;
+      bottom: 0;
+      padding: 10px 0 10px 0;
+
+      .name{
+        font-size: 40px;
+        text-align: center;
+        font-family: @titleFont;
+        font-weight: bold;
+      }
+
+      .subtitle{
+        font-size: 30px;
+        font-family: @titleFont;
+        font-weight: lighter;
+      }
+
+      .content{
+        font-family: @titleFont;
+        font-size: 20px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+
+    .experience{
+
+      img{
+        width: 90%;
+      }
+
+      .title{
+        font-family: @titleFont;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .date{
+        font-weight: lighter;
+        font-style: italic;
+        font-size: @smallFont;
+        color: @grey;
+      }
+
+      a{
+        .button(5px);
+      }
+    }
+  }
+}
