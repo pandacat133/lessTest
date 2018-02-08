@@ -29,12 +29,28 @@ body {
   height: 700px;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
 .container .left {
   width: 50%;
   height: 100%;
   background: url("../images/businessWoman.png") no-repeat;
   background-size: cover;
   position: relative;
+}
+@media (max-width: 400px) {
+  .container .left {
+    width: 100%;
+  }
 }
 .container .left .info {
   background-color: #696969;
@@ -57,7 +73,6 @@ body {
   font-weight: lighter;
 }
 .container .left .info .content {
-  font-family: 'Asul', sans-serif;
   font-size: 20px;
   font-weight: normal;
 }
@@ -68,6 +83,18 @@ body {
   flex-direction: column;
   justify-content: space-around;
   padding-left: 30px;
+}
+@media (max-width: 400px) {
+  .container .right {
+    padding-left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+}
+@media (max-width: 400px) {
+  .container .right .experience {
+    padding-left: 20px;
+  }
 }
 .container .right .experience img {
   width: 90%;
@@ -84,16 +111,21 @@ body {
   color: #696969;
 }
 .container .right .experience a {
-  width: 15%;
   border-radius: 5px;
   text-decoration: none;
   display: block;
-  margin-top: 15px;
-  padding: 10px;
   text-align: center;
+  color: #2A2A2A;
+  background-color: #696969;
+  font-size: 12px;
   color: #FFFFFF;
   background-color: #7FACAA;
-  font-size: 12px;
+  width: 15%;
+  padding: 10px;
+  margin-top: 15px;
+}
+.container .right .experience a:hover {
+  color: #FFFFFF;
 }
 .container .right .experience a:hover {
   color: #2A2A2A;
